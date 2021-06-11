@@ -1,0 +1,4 @@
+resources:
+- argocd-admin.yaml
+- my-inventory-dev-environment.yaml
+- my-inventory-dev-rolebinding.yaml

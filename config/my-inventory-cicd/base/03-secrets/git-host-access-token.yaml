@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: git-host-access-token
+  namespace: my-inventory-cicd
+spec:
+  encryptedData:
+    token: AgBK9kVO53hEXaHY10mrfDx1MN8KChl0AhYWsSVpG5BOg10+IzxGvWTeRVd1Efz9DIeWV7sv9cwH1Qhd7Dvr8fZZ7rQ32JGElYzRBL8xzX6DOdUdbr3z2Jaz7/yMaBwm1bD1KJ3+Qb1OBo/fSy9xS/oixVfI2RWK9ssKVDG5ymeZJNGRbjK9wg+E5EOCfEC+UgM4lRLoDLfYSq5f28fhb6lmowGCXnOBvh0KHbKOAOECPtmrtntf7FaubDCDf5D++ljYH7rpdqtrWpb8+cHE3Ae0s9f414Xl8UfBhMQU/FE7CfOfgqH7fqK3wX3bvyVfr3pWCCoeiLbc+0P1nfcwhVmIguoNI7Ujvn2V2OJwPCbRYb9qu9PQQ7rv9E1MHtY32f71GCGsyW/39usMiOCUlul9DX8J/VOoW89bFUREMA7GSZaEjW1E5Eifn7+IWcc4V6MNFzQXQet9c1xCDNEFxI8YmjH0caYTVqYpDJGHBlYPSfpbGYsPHWkfcYBwNcURdx5lMHzN2T9i0BiQ10gpxwUj/I37ASWEEH3Rwa/GagfYJonULe8ghWIMa6pkbYRu1JM9hduB+S0E+sgRRr5F6s+oOJ/D1a35b3je2RLYSj2MDD1ygJ1gaQZAVnoug2cdlojwZRa3KCHitV+KuylHerFjF0wGTm0AskC8WyaksAGn8CyxeRmjI2+9JyKH9VQhuiZBG6zp09b7RMUAWRrzxclDTcLiT8Ce41j1RQV/Af0HKacjjoa1iCNO
+  template:
+    metadata:
+      creationTimestamp: null
+      name: git-host-access-token
+      namespace: my-inventory-cicd
+    type: Opaque

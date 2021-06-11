@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    app.openshift.io/vcs-uri: https://github.com/jbcodeforce/refarch-eda-inventory-gitops.git?ref=HEAD
+  creationTimestamp: null
+  name: my-inventory-stage
+spec: {}
+status: {}

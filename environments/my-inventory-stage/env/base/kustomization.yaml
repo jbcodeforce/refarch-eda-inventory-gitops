@@ -1,0 +1,3 @@
+resources:
+- argocd-admin.yaml
+- my-inventory-stage-environment.yaml

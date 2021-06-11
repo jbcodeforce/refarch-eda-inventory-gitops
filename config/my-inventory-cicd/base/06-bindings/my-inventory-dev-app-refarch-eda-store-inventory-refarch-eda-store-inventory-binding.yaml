@@ -1,0 +1,13 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  creationTimestamp: null
+  name: my-inventory-dev-app-refarch-eda-store-inventory-refarch-eda-store-inventory-binding
+  namespace: my-inventory-cicd
+spec:
+  params:
+  - name: imageRepo
+    value: image-registry.openshift-image-registry.svc:5000/ibmcase/store-aggregator
+  - name: tlsVerify
+    value: "false"
+status: {}

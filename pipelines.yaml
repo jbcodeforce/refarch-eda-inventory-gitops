@@ -1,0 +1,29 @@
+config:
+  argocd:
+    namespace: openshift-gitops
+  pipelines:
+    name: my-inventory-cicd
+environments:
+- apps:
+  - name: app-refarch-eda-store-inventory
+    services:
+    - name: refarch-eda-store-inventory
+      pipelines:
+        integration:
+          bindings:
+          - my-inventory-dev-app-refarch-eda-store-inventory-refarch-eda-store-inventory-binding
+          - github-push-binding
+      source_url: https://github.com/jbcodeforce/refarch-eda-store-inventory.git
+      webhook:
+        secret:
+          name: webhook-secret-my-inventory-dev-refarch-eda-store-inventory
+          namespace: my-inventory-cicd
+  name: my-inventory-dev
+  pipelines:
+    integration:
+      bindings:
+      - github-push-binding
+      template: app-ci-template
+- name: my-inventory-stage
+gitops_url: https://github.com/jbcodeforce/refarch-eda-inventory-gitops.git
+version: 1
